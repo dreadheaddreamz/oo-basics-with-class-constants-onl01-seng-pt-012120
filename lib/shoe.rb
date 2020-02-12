@@ -5,8 +5,10 @@ class Shoe
 
   def initialize(brand)
     @brand = brand
-    if 
+    if BRANDS.include?(brand)
+  else BRANDS << brands
   end
+end
   
   def cobble
     self.condition = "new"
